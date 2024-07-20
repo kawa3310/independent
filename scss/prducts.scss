@@ -1,0 +1,96 @@
+@import '_set.scss';
+
+.search{
+  background: #916019;
+  ul{
+    padding: 14px;
+    gap: 28px;
+    li a{
+      font-size: $font-s;
+      color: #FFFFFF;
+    }
+  }
+  .side-menu{
+    @include mobile{
+      display: none;
+    }
+  }
+}
+
+.main{
+  margin-top: 80px;
+  @include mobile{ 
+    margin-top: 51px;
+  }
+  .cart-row{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .column{
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include mobile{
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.card{
+  font-weight: 300;
+  .img-box{
+    max-width: 255px;
+    height: 255px;
+    @include mobile{
+      max-width: 165px;
+      height: 165px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.card-body{
+  .title{
+    h3{
+      font-size: $font-m;
+      @include mobile{
+        font-size: $font-s;
+      }
+    }
+  }
+  .price{
+    p{
+      padding-right: 8px;
+    }
+    span{
+      color: $text-muted;
+      text-decoration: line-through;
+    }
+  }
+  .icon{
+    color: $text-primary;
+  }
+}
+
+.page{
+  padding: 16px 0 40px 0;
+  ul{
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    a{
+      font-size: $font-s;
+      color: #000000;
+    }
+    a:hover{
+      color: #AC8A46;
+      text-decoration: underline;
+    }
+  }
+}
